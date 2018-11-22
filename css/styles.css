@@ -188,15 +188,20 @@ nav {
   flex-wrap: wrap;
   justify-content: center;
 }
+/* to umozliwia skalowanie kółka oraz ustawienie dla niego max-width */
+.person_image {
+  max-width: 200px;
+}
 
-.person-img {
+.person_img {
   width: 100%;
-
 }
 
 .opinion_text_with_quo {
   display: flex;
   padding-top: 30px;
+  max-width: 450px;
+  margin-left: 30px;
 }
 
 .quo {
@@ -207,3 +212,84 @@ nav {
   padding-left: 15px;
   width: 100% - 80% - 20px;
 }
+
+.opinion_img {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  /* border: 1px solid green; */
+  width: 200px;
+}
+
+.opinion_img img {
+  padding: 7px;
+}
+ #contact {
+   background-color: #475985;
+ }
+
+ .contact_info {
+   padding-top: 30px;
+   width: 80%;
+   margin-left: auto;
+   margin-right: auto;
+   /* text-align: left; */
+ }
+
+ .icon {
+   display: block;
+   /* width: 50px;
+   height: 50px; */
+   color: #475985;
+   background-color: #bfbfbf;
+   font-size: 1.5em;
+  margin: 15px;
+  padding: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform .2s;
+  /* align-items: center; */
+ }
+
+ .icon:hover {
+   background-color: white;
+ }
+
+.input {
+    padding: 20px;
+    border: 0;
+    margin: 0;
+    border-radius: 4px;
+    background-color: #eee;
+    color: #747474;
+    margin: 10px;
+    transition: transform .2s;
+}
+
+.input:focus {
+  background-color: white;
+}
+
+.contact-form {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.textarea {
+  width: 100%;
+}
+
+ footer {
+   background-color: #0d0b11;
+   color: #76777f;
+  text-align: center;
+  padding: 30px;
+ }
+
+ footer p {
+   font-size: 0.8em;
+ }

@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/styles.css">
    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <title>Macankumbank</title>
 </head>
 
@@ -37,6 +38,8 @@
 <section id="home">
   <div class="home_img">
   <img src="img/img_slider.png" alt="" class="home_photo">
+  <!-- <img src="img/img-customer.png" alt="" class="home_photo"> -->
+
 </div>
   <div class="content">
   <h1>Kalau Kita mau, Pasti ada Jalan</h1>
@@ -129,52 +132,59 @@
   <img src="img/separator_b.png" alt="">
   </div><!-- headers -->
     <div class="opinion_content black">
-      <div class="person-image"><img src="img/img-customer.png" alt="John Doe" class="person_img"></div>
+      <div class="person_image">
+        <img src="img/img-customer.png" alt="John Doe" class="person_img">
+      </div>
           <div class="opinion_text_with_quo">
               <div class="quo"><img src="img/quo.png" alt="quotation mark" class="quotation"></div><!-- quo -->
               <div class="opinion_text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
-              <span class="sign"><b>John DoeS</b></span></div>
+              </br></br><span class="sign"><b>John Doe</b></span></div>
           </div><!-- opinion text with quo -->
     </div><!-- opinion content -->
-    kółeczka :-)
+    <div class="opinion_img">
+        <img src="img/Ellipse1.png" alt="opinion picker" class="1op">
+        <img src="img/Ellipse1.png" alt="opinion picker" class="2op">
+        <img src="img/Ellipse1.png" alt="opinion picker" class="3op">
+        <img src="img/Ellipse3.png" alt="opinion picker" class="4op">
+    </div><!-- opinion img -->
 </section>
 
 <section id="contact">
-  <div>
+  <div class="headers work_header">
   <h2>Get in Touch With us</h2>
   <p>Ready for 24/7</p>
   </div>
   <div>
-    mapa
+    <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1276.6576712354788!2d-5.483417853088951!3d50.21132740435956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486add5b08478aef%3A0x96a60fe03aff0e71!2sRoyal+Square!5e0!3m2!1spl!2spl!4v1508887266346" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen=""></iframe> -->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2553.4240973123246!2d-5.4814463!3d50.2092949!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486ac2bffef122a7%3A0xfb41f60e5811111!2sSaint+Ives%2C+Wielka+Brytania!5e0!3m2!1spl!2spl!4v1542876058178" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
   </div>
-  <div>
-    <h3>Contact</h3>
+  <div class="headers">
+    <h2>Contact</h2>
    <p>Let's talk business, get in touch!</p>
    <img src="img/separator.png" alt="">
-   <div>
-     <strong class="fade-in">Office Hours</strong>
-                   <p class="paragraph fade-in">Monday to Friday / 7:00 - 18:00 Saturday / 9:00 - 15:00</p>
-                   <p class="paragraph_data data-place fade-in">25 Silver Cost Avenue MD 20910 Indonesia</p>
-                   <p class="paragraph_data data-phone fade-in"><a href="tel:6215556789" class="link_phone">(621) 555 6789</a></p>
-                   <p class="paragraph_data data-email fade-in">hello@macankumbang.net</p>
-                   <ul class="social-media-list fade-in">
-                       <li><a href="#" class="social-media-link"><span class="icon-social-media icon-twitter-circled" aria-label="twitter"></span></a></li>
-                       <li><a href="#" class="social-media-link"><span class="icon-social-media icon-facebook-circled" aria-label="facebook"></span></a></li>
-                       <li><a href="#" class="social-media-link"><span class="icon-social-media icon-gplus-circled"  aria-label="google+"></span></a></li>
-                        </div>
+ </div><!-- headers -->
+     <p class="contact_info">
+       <b>Office Hours</b></br></br>
+       Monday to Friday / 7:00 - 18:00 Saturday / 9:00 - 15:00</br></br>
+       <i class="fas fa-map-marker-alt"></i>  25 Silver Cost Avenue MD 20910 Indonesia</br></br>
+      <i class="fas fa-phone"></i>  (621) 555 6789</br></br>
+      <i class="far fa-envelope"></i>  hello@macankumbang.net</br></br>
+      <i class="fab fa-twitter icon"></i>
+      <i class="fab fa-facebook-f icon"></i>
+      <i class="fab fa-google-plus-g icon"></i>
+     </p>
      <form method="post" class="contact-form">
-                       <input type="text" placeholder="Name" required class="input fade-in" name="name"><input type="email" placeholder="Email(will not published)" required class="input fade-in" name="email">
-                       <textarea name="content" cols="30" rows="10" placeholder="Message" required class="textarea fade-in"></textarea>
-                       <input type="submit" value="Send" class="button_red fade-in">
-                   </form>
-
-  </div>
+         <input type="text" placeholder="Name" required class="input" name="name">
+         <input type="email" placeholder="Email(will not published)" required class="input" name="email">
+         <textarea name="content" cols="30" rows="10" placeholder="Message" required class="textarea input"></textarea>
+         <input type="submit" value="Send" class="button">
+     </form>
 </section>
 </main>
 
 <footer>
-  <p class="paragraph paragraph_copyright fade-in">(c)copyright 2013 macunkumbang</p>
-  <p class="paragraph"><span class="span_bold fade-in">Macank</span>umbang</p>
+  <p>(c)copyright 2013 macunkumbang</p>
+  <div class=""><b>Macan</b>kumbang</div>
 </footer>
 </body>
 </html>
