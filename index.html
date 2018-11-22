@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/styles.css">
-   <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+   <link rel="stylesheet" href="css/responsive.css">
    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <title>Macankumbank</title>
 </head>
@@ -14,6 +14,13 @@
 <body>
 <header>
   <div id="menu" aria-label="menu">&#9776;</div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#services" >Services</a>
+    <a href="#work" >Work</a>
+    <a href="#testimonials" >Testimonials</a>
+    <a href="#contact" >Contact</a>
+  </nav>
 
   <div class="logo"><b>Macan</b>kumbang</div>
   <div id="open_menu">
@@ -24,28 +31,22 @@
     <a href="#testimonials" >Testimonials</a>
     <a href="#contact" >Contact</a>
   </div>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#services" >Services</a>
-      <a href="#work" >Work</a>
-      <a href="#testimonials" >Testimonials</a>
-      <a href="#contact" >Contact</a>
-    </nav>
+
 
 </header>
 
 <main id="maincontent">
 <section id="home">
-  <div class="home_img">
-  <img src="img/img_slider.png" alt="" class="home_photo">
-  <!-- <img src="img/img-customer.png" alt="" class="home_photo"> -->
-
-</div>
   <div class="content">
   <h1>Kalau Kita mau, Pasti ada Jalan</h1>
             <h3>Semangat terus saudara-saudara!</h3>
             <button class="button">More</button>
           </div><!-- content -->
+  <div class="home_img">
+  <img src="img/img_slider.png" alt="" class="home_photo">
+  <!-- <img src="img/img-customer.png" alt="" class="home_photo"> -->
+
+</div>
 </section>
 
 <section id="services">
@@ -105,18 +106,15 @@
     <!-- <div class="_photo">
       basia
     </div> -->
-
       <div class="project_desc">
-        <!-- <h4>Macankumbang</h4>
+        <h3>Macankumbang</h3>
         <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat</p>
-        <img src="img/eye.png">-->
+        <img src="img/eye.png">
       </div>
 
-      <div class="project_desc">
-        <!-- <h4>Macankumbang</h4>
-        <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat</p>
-        <img src="img/eye.png">-->
+      <div class="project_foto">
       </div>
+
   </div>
   <div class="headers black">
   <p><b>Browse All</b></p>
@@ -163,6 +161,7 @@
    <p>Let's talk business, get in touch!</p>
    <img src="img/separator.png" alt="">
  </div><!-- headers -->
+ <div class="contact_area">
      <p class="contact_info">
        <b>Office Hours</b></br></br>
        Monday to Friday / 7:00 - 18:00 Saturday / 9:00 - 15:00</br></br>
@@ -179,6 +178,7 @@
          <textarea name="content" cols="30" rows="10" placeholder="Message" required class="textarea input"></textarea>
          <input type="submit" value="Send" class="button">
      </form>
+   </div><!-- contact area -->
 </section>
 </main>
 

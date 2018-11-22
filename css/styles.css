@@ -9,7 +9,10 @@ color: white;
 header {
 width: 100%;
 background-color: #0d0b11;
-border: 1px solid green;
+position: fixed;
+top: 0;
+left: 0;
+/* border: 1px solid green; */
 /* display: flex;
 flex-wrap: wrap; */
 }
@@ -29,6 +32,20 @@ flex-wrap: wrap; */
 
 nav {
   display: none;
+  float: right;
+  padding: 15px 45px;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    transition: transform .2s;
+}
+
+nav a:hover {
+  color: #76777f;
+  transform: scale(1.2);
 }
 
 #menu {
@@ -78,6 +95,8 @@ nav {
   background-size: auto 100%;
     /* padding: 80px 10% 0; */
     width: 100%;
+    /* margin for position fixed for header */
+    margin-top: 65px;
 }
 
 .home_img {
@@ -85,6 +104,7 @@ nav {
   margin-left: auto;
   margin-right: auto;
   margin-top: 30px;
+  max-width: 460px;
 }
 
 .home_photo {
@@ -96,6 +116,10 @@ nav {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
+  /* border: 1px solid green; */
+  max-width: 450px;
+  margin-top: 45px;
+  margin-bottom: 30px;
 }
 
 .button {
@@ -106,8 +130,8 @@ nav {
     border-radius: 4px;
     border: 0;
     transition: .2s;
-    padding: 15px;
-      margin-bottom: 15px;
+    padding: 15px 30px 15px 30px;
+      margin: 10px;
 }
 
 .button:hover {
@@ -164,19 +188,32 @@ nav {
   display: flex;
     flex-wrap: wrap;
 }
-}
 
-.project_photo {
-  width: 300px;
-  height: 200px;
+.project_foto {
+  width: 367px;
+  height: 290px;
   background-color: #7b7b7b;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 45px;
 }
 
 .project_desc {
-  width: 300px;
-  height: 200px;
-  background-color: #7b7b7b;
-      margin: 15px;
+  width: 367px;
+  height: 290px;
+  background-color: #475985;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  margin-top: 45px;
+}
+
+.project_desc h3{
+  margin-top: 50px;
+}
+
+.project_desc p{
+  margin: 30px;
 }
 
 .opinion_content {
@@ -269,6 +306,11 @@ nav {
 
 .input:focus {
   background-color: white;
+}
+
+.contact_area {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .contact-form {
