@@ -125,25 +125,8 @@ function render_all_projects() {
     }
 }
 
-render_projects();
-
-$('#menu').click(function() {
-    $('#open_menu').css("display", "block");
-});
-
-$('#open_menu').click(function() {
-  $('#open_menu').toggle();
-});
-
-$('.efect').click(function() {
-  render_all_projects();
-  // $('.browse').innerHTML = "";
-  var x = $('.browse').html("");
-  // console.log(x);
-});
-
-
 function render_opinions() {
+  //first opinion is render from the html, the function stars from second
   var a = 1;
   var array = get_opinions();
   setInterval(function(){
@@ -162,6 +145,24 @@ function render_opinions() {
   }, 4000);
 }
 
+render_projects();
 render_opinions();
+
+$('#menu').click(function() {
+    $('#open_menu').css("display", "block");
+});
+
+$('#open_menu').click(function() {
+  $('#open_menu').toggle();
+});
+//arrow render all projects click event
+$('.efect').click(function() {
+  render_all_projects();
+  // $('.browse').innerHTML = "";
+  var x = $('.browse').html("");
+  // console.log(x);
+});
+
+
 
 //VIEW//
