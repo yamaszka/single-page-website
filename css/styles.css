@@ -10,6 +10,7 @@ header {
 width: 100%;
 background-color: #0d0b11;
 position: fixed;
+z-index: 10;
 top: 0;
 left: 0;
 /* border: 1px solid green; */
@@ -53,6 +54,7 @@ nav a:hover {
   font-size: 1.8em;
   padding: 15px;
   float: right;
+  cursor: pointer;
 }
 
 #open_menu {
@@ -61,12 +63,15 @@ nav a:hover {
   right: 0px;
   background-color: #0d0b11;
   display: none;
+  width: 280px;
+  padding-top: 60px;
+  padding-left: 45px;
 }
 
 #open_menu a {
   display: block;
     text-decoration: none;
-    padding: 15px;
+    padding-bottom: 60px;
     font-size: 1.2em;
     color: white;
     transition: transform .2s;
@@ -79,7 +84,15 @@ nav a:hover {
 
 .close_cross {
   float: right;
-      padding-top: 10px;
+  margin-right: 30px;
+  margin-top: -30px;
+  font-size: 1.5em;
+  transition: transform .2s;
+}
+
+.close_cross:hover {
+  transform: scale(1.1);
+  color: #56565d;
 }
 
 #home {
@@ -189,14 +202,6 @@ nav a:hover {
     flex-wrap: wrap;
 }
 
-.project_foto {
-  width: 367px;
-  height: 290px;
-  background-color: #7b7b7b;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 45px;
-}
 
 .project_desc {
   width: 367px;
@@ -206,6 +211,10 @@ nav a:hover {
   margin-left: auto;
   text-align: center;
   margin-top: 45px;
+  /* this must be relative to let -foto be absolute */
+  position: relative;
+  cursor: pointer;
+  /* display: none; */
 }
 
 .project_desc h3{
@@ -215,6 +224,23 @@ nav a:hover {
 .project_desc p{
   margin: 30px;
 }
+
+.project_foto {
+  /* that might be absolute because -desc is relative */
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: width 2s, height 2s, transform 2s;
+}
+
+.project_foto:hover{
+  opacity: 0;
+  transform: rotate(180deg);
+}
+
+ .project_foto:focus {
+   opacity: 0;
+ }
 
 .opinion_content {
   width: 80%;
