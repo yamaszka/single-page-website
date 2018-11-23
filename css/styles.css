@@ -361,3 +361,12 @@ nav a:hover {
  footer p {
    font-size: 0.8em;
  }
+
+.efect {
+  transition: transform .2s;
+  cursor: pointer;
+}
+
+.efect:hover {
+transform: scale(1.3);
+}
